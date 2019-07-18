@@ -49,12 +49,13 @@ while (ep < the_max):
         tag_dict.update({i: Tag(i, tag.get_random() - 1)})
     # 校验成功，识别一个tag
     if count == 1:
-        print('rn16-ack(head,r16)')
-        print('crc right')
+        print('rn16-ack(head,rn16)')
+        print('rn16 right')
         print('epc')
         print('tag-id-' + str(rn16_tag_id[0]))
     # 校验失败，发生碰撞
     elif count > 1:
-        print('rn16-ack(head,r16)')
-        print('crc error')
+        print('rn16-ack(head,rn16)')
+        print('rn16 error')
     ep += 1
+
